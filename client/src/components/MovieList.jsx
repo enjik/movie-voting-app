@@ -3,10 +3,10 @@ import Movie from './Movie.jsx';
 
 const MovieList = (props) => {
   return (
-    <div>
-      <div>MovieList</div>
-      <Movie />
-    </div>
+    <ol class="movie-list">
+      {props.movies.map(movie => (
+        <Movie info={movie} />))}
+    </ol>
   )
 }
 

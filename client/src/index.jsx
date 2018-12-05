@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import MovieList from './components/MovieList.jsx';
 import MovieForm from './components/MovieForm.jsx';
 
+const exampleMovies = ["A", "B", "C", "D"];
 const App = (props) => (
   <div>
-    <div>Hello</div>
-    <MovieList />
     <MovieForm />
+    <MovieList movies={exampleMovies} />
   </div>
 );
 
