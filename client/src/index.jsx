@@ -27,7 +27,7 @@ class App extends React.Component {
   handleNewMovie(newtitle) {
     // Post request
     axios.post('/api/movies', {title: newtitle})
-    .then(response =>
+    .then(response => {
       // Get new list of all movies
       axios.get('/api/movies')
       .then(response => {
@@ -36,9 +36,9 @@ class App extends React.Component {
           movies: response.data
         })
       })
-      .catch(error => console.log('Axios could not retrieve movies:', error));
+      .catch(error => console.log('Axios could not retrieve movies:', error))
     })
-    .catch(error => console.log('Axios could not post new movie:', error));
+    .catch(error => console.log('Axios could not post new movie:', error))
   }
 
   render() {
