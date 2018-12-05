@@ -3,9 +3,9 @@ import Movie from './Movie.jsx';
 
 const MovieList = (props) => {
   return (
-    <ol class="movie-list">
-      {props.movies.map(movie => (
-        <Movie info={movie} />))}
+    <ol className="movie-list">
+      {props.movies.map((movie, i) => (
+        <Movie info={movie} key={i}/>))}
     </ol>
   )
 }

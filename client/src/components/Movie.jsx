@@ -6,7 +6,7 @@ class Movie extends React.Component {
   }
   render() {
     return(
-      <li class="movie-member">
+      <li className="movie-member">
         <div>Upvote</div>
         <div>DownVote</div>
       </li>
