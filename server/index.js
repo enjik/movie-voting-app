@@ -7,6 +7,9 @@ const app = express();
 // Port to listen to
 const PORT = 3000;
 
+// Serve static files
+app.use(express.static(__dirname + '/../client/dist'));
+
 // Get all movies by desc number of movie votes
 app.get('/api/movies', (req, res) => {
 
