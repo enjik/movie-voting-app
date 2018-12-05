@@ -6,7 +6,10 @@ class MovieForm extends React.Component {
   }
   render() {
     return (
-      <div>MovieForm</div>
+      <form>
+        <input />
+        <button>Add Movie</button>
+      </form>
     )
   }
 }
